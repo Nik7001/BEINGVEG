@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="faqHeader" customModule="BeingVegetarian" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cQ-4D-LbL">
+                    <rect key="frame" x="0.0" y="0.0" width="380" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryT-fW-w2T">
+                            <rect key="frame" x="8" y="4" width="364" height="40"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black_triangular" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-mJ-o5c">
+                            <rect key="frame" x="348" y="18" width="16" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="2EN-9w-S6g"/>
+                                <constraint firstAttribute="height" constant="14" id="Bcr-Ey-ye8"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-Kj-oon">
+                            <rect key="frame" x="16" y="14" width="324" height="22"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNb-66-jBf">
+                            <rect key="frame" x="0.0" y="0.0" width="380" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <connections>
+                                <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="uwg-WQ-hfI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RHI-Kj-oon" firstAttribute="leading" secondItem="5cQ-4D-LbL" secondAttribute="leading" constant="16" id="6Le-rl-oC3"/>
+                        <constraint firstItem="UNb-66-jBf" firstAttribute="leading" secondItem="5cQ-4D-LbL" secondAttribute="leading" id="CYk-a3-QaR"/>
+                        <constraint firstAttribute="bottom" secondItem="UNb-66-jBf" secondAttribute="bottom" id="JpM-c1-peb"/>
+                        <constraint firstAttribute="bottom" secondItem="RHI-Kj-oon" secondAttribute="bottom" constant="14" id="P8E-wG-GNb"/>
+                        <constraint firstItem="ryT-fW-w2T" firstAttribute="leading" secondItem="5cQ-4D-LbL" secondAttribute="leading" constant="8" id="QS6-Na-pwr"/>
+                        <constraint firstItem="RHI-Kj-oon" firstAttribute="top" secondItem="5cQ-4D-LbL" secondAttribute="top" constant="14" id="TJU-Zj-7S4"/>
+                        <constraint firstAttribute="trailing" secondItem="UNb-66-jBf" secondAttribute="trailing" id="ZX2-yT-bgR"/>
+                        <constraint firstItem="ryT-fW-w2T" firstAttribute="top" secondItem="5cQ-4D-LbL" secondAttribute="top" constant="4" id="djJ-QU-jql"/>
+                        <constraint firstItem="nY0-mJ-o5c" firstAttribute="centerY" secondItem="5cQ-4D-LbL" secondAttribute="centerY" id="etx-kn-7bx"/>
+                        <constraint firstItem="RHI-Kj-oon" firstAttribute="top" secondItem="5cQ-4D-LbL" secondAttribute="top" constant="14" id="fV1-wi-dlk"/>
+                        <constraint firstAttribute="bottom" secondItem="RHI-Kj-oon" secondAttribute="bottom" constant="14" id="hgm-9v-QmM"/>
+                        <constraint firstAttribute="trailing" secondItem="nY0-mJ-o5c" secondAttribute="trailing" constant="16" id="hr5-sc-kOQ"/>
+                        <constraint firstAttribute="bottom" secondItem="ryT-fW-w2T" secondAttribute="bottom" constant="6" id="iTo-CU-8ba"/>
+                        <constraint firstItem="nY0-mJ-o5c" firstAttribute="leading" secondItem="RHI-Kj-oon" secondAttribute="trailing" constant="8" id="oFz-zz-bJH"/>
+                        <constraint firstItem="UNb-66-jBf" firstAttribute="top" secondItem="5cQ-4D-LbL" secondAttribute="top" id="oR8-E9-lzc"/>
+                        <constraint firstAttribute="trailing" secondItem="ryT-fW-w2T" secondAttribute="trailing" constant="8" id="u7d-hP-Zjg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5cQ-4D-LbL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="BYT-zj-gLV"/>
+                <constraint firstItem="5cQ-4D-LbL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GM9-wA-cVH"/>
+                <constraint firstItem="5cQ-4D-LbL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bKs-jf-1Rq"/>
+                <constraint firstItem="5cQ-4D-LbL" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="k3l-KX-Ir0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backView" destination="ryT-fW-w2T" id="ydk-PZ-rwM"/>
+                <outlet property="imgArrow" destination="nY0-mJ-o5c" id="B50-Lo-ajF"/>
+                <outlet property="lblTitle" destination="RHI-Kj-oon" id="8Wg-37-7B7"/>
+                <outlet property="viewHeadBack" destination="5cQ-4D-LbL" id="SHq-Fc-DF5"/>
+            </connections>
+            <point key="canvasLocation" x="25.600000000000001" y="336.43178410794604"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="black_triangular" width="16" height="16"/>
+    </resources>
+</document>

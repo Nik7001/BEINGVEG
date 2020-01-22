@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-BeingVegetarian/Pods-BeingVegetarian-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FloatRatingView/FloatRatingView.framework
+${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/SVPinView/SVPinView.framework
